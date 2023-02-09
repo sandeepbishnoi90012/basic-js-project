@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .imgbox {
+  height: 50vh;
+  width: 50vw;
+  position: relative;
+  overflow: hidden;
+}
+body main .imgbox img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  transition: all 0.3s;
+}
+body main .btnbox {
+  height: 10vh;
+  width: 50vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+body main .btnbox button {
+  height: 50%;
+  margin-top: 2rem;
+  width: 40%;
+  background-color: gray;
+  border: 2px solid black;
+  color: antiquewhite;
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  cursor: pointer;
+}
+body main .btnbox button:active {
+  background-color: aliceblue;
+  color: gray;
+}/*# sourceMappingURL=style.css.map */

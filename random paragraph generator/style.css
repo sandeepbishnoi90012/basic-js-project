@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header {
+  height: 10vh;
+  width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body header label {
+  font-size: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body header label input {
+  outline: none;
+  margin-left: 0.3rem;
+  width: 20%;
+  height: 80%;
+}
+body header button {
+  color: rgb(0, 0, 0);
+  border: 2px solid blue;
+  background-color: antiquewhite;
+  height: 50%;
+  width: 40%;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+body header button:hover {
+  transform: scale(1.1);
+}
+body header button:active {
+  transform: scale(1);
+}
+body #mainbox {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #mainbox .parabox {
+  width: 90%;
+  text-align: justify;
+  margin: 0.7rem 0;
+}/*# sourceMappingURL=style.css.map */

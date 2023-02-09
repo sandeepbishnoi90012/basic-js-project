@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+form .calculator {
+  background-color: rgb(150, 136, 136);
+  height: 60%;
+  width: 40%;
+  border-radius: 1rem;
+}
+form .calculator .display {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+form .calculator .display input {
+  height: 50%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: antiquewhite;
+  font-size: 2rem;
+  padding: 0% 8%;
+  text-align: end;
+}
+form .calculator .keys {
+  height: 70%;
+  width: 100%;
+}
+form .calculator .keys .firstKeys, form .calculator .keys .secondKeys, form .calculator .keys .thirdKeys, form .calculator .keys .fourthKeys, form .calculator .keys .fifthKeys {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+form .calculator .keys .firstKeys input, form .calculator .keys .secondKeys input, form .calculator .keys .thirdKeys input, form .calculator .keys .fourthKeys input, form .calculator .keys .fifthKeys input {
+  background-color: rgb(152, 93, 93);
+  height: 80%;
+  width: 20%;
+  margin-top: 0.5rem;
+  border-radius: 30%;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+form .calculator .keys .firstKeys input:hover, form .calculator .keys .secondKeys input:hover, form .calculator .keys .thirdKeys input:hover, form .calculator .keys .fourthKeys input:hover, form .calculator .keys .fifthKeys input:hover {
+  transform: scale(0.9);
+}/*# sourceMappingURL=style.css.map */

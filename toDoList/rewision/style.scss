@@ -1,0 +1,113 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --grey: #6b7280;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --light: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--dark);
+  header {
+    max-height: 30vh;
+    width: 100%;
+    h3 {
+      font-size: 1.8rem;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-weight: normal;
+      margin: 1.5rem 0 1rem 1rem;
+    }
+    form {
+      height: 10vh;
+      background-color: var(--darker);
+      // background-color: #8B5CF6;
+      padding: 1rem 0rem 1rem 1rem;
+      max-width: 95vw;
+      border-radius: 2rem;
+      position: relative;
+      margin: 1rem;
+      #form_input {
+        background-color: transparent;
+        color: #eee;
+        border: none;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+      }
+      #form_submit {
+        background-color: transparent;
+        color: #eee;
+        border: none;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 30%;
+        right: 5%;
+        color: #8b5cf6;
+        cursor: pointer;
+      }
+    }
+  }
+  main {
+    height: 70%;
+    width: 100vw;
+    h3 {
+      font-size: 1.8rem;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-weight: normal;
+      margin: 1.5rem 0 1rem 1rem;
+    }
+    #tasks {
+      height: 80%;
+
+      .task {
+        font-size: 2rem;
+        background-color: #111827;
+        // position: relative;
+        margin: 1rem;
+        height: 30%;
+        width: 95%;
+        border-radius: 3rem;
+      
+        input {
+          background-color: transparent;
+          color: #eee;
+          border: none;
+          font-size: 1.5rem;
+          margin: 1rem 1rem 1rem 2rem;
+        }
+        .edit {
+            background-color: transparent;
+            color: #eee;
+            cursor: pointer;
+            border: none;
+            font-size: 1.5rem;
+            color: #8b5cf6;
+            margin: 1rem 1rem 1rem 60rem;
+        }
+        .delete{
+            right: 50px;
+            cursor: pointer;
+            background-color: transparent;
+            color: #eee;
+            border: none;
+            font-size: 1.5rem;
+            color: #8b5cf6;
+        }
+      }
+    }
+   
+  }
+}

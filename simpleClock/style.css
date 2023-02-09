@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: aliceblue;
+}
+body #analog_clock {
+  height: 70vh;
+  width: 100vw;
+  background-image: url(/clock.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+body #analog_clock #hours, body #analog_clock #minutes, body #analog_clock #seconds {
+  position: absolute;
+  height: 16vh;
+  width: 0.7vw;
+  background-color: black;
+  border-radius: 20%;
+  bottom: 49%;
+  left: 49.5%;
+  transform-origin: bottom;
+}
+body #analog_clock #minutes {
+  height: 20vh;
+}
+body #analog_clock #seconds {
+  height: 25vh;
+}
+body #digital_clock {
+  height: 30vh;
+  width: 100vw;
+  background-color: aliceblue;
+  display: grid;
+  place-content: center;
+}
+body #digital_clock #info {
+  justify-content: center;
+  height: 21vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  font-size: 6rem;
+}/*# sourceMappingURL=style.css.map */

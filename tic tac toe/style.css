@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+body nav {
+  height: 10%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+body .container {
+  height: 90%;
+  width: 100%;
+  background-color: aliceblue;
+}
+body .container .gameContainer {
+  height: 70%;
+  width: 100%;
+  background-color: beige;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(3, 20%);
+  grid-template-rows: repeat(3, 20%);
+}
+body .container .gameContainer .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  cursor: pointer;
+}
+body .container .gameContainer .box .boxtext {
+  font-size: 3.5rem;
+}
+body .container .infoContainer {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+body .container .infoContainer #reset {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  transition: all 0.3s;
+  background-color: antiquewhite;
+}
+body .container .infoContainer #reset:hover {
+  transform: scale(0.8);
+  cursor: pointer;
+}
+body .container .infoContainer .info {
+  padding: 1rem 1.7rem;
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  transition: all 0.3s;
+  background-color: antiquewhite;
+  text-transform: uppercase;
+}
+body .container .infoContainer .info:hover {
+  transform: scale(0.8);
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

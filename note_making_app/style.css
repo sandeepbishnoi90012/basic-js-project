@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  height: 5%;
+  width: 100px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: bisque;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  position: fixed;
+  z-index: 12;
+}
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1);
+}
+
+.maincontainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aliceblue;
+  padding: 1rem;
+}
+.maincontainer .notebox {
+  height: 40vh;
+  width: 25vw;
+  background-color: bisque;
+  border-radius: 20px;
+  padding: 0.5rem;
+  position: relative;
+  margin: 1rem;
+}
+.maincontainer .notebox .action {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  font-size: 1.1rem;
+}
+.maincontainer .notebox .action i {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.maincontainer .notebox .action i:hover {
+  transform: scale(1.1);
+}
+.maincontainer .notebox .action i:active {
+  transform: scale(1);
+}
+.maincontainer .notebox textarea {
+  height: 85%;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 1.1rem;
+}/*# sourceMappingURL=style.css.map */
